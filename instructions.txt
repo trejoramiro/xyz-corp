@@ -1,0 +1,11 @@
+Your task is to create a pixel-perfect version of the web site mocked up in the images "desktop_version.png" and "mobile_version.png" using HTML, CSS and jQuery.  The two images represent the same website as it would be displayed at either a wide, desktop computer resolution or at a narrower, mobile resolution.  You are creating only one site that must adapt to the two resolutions, do not create two separate sites representing the two resolutions.
+
+Use only the included files to make this mockup.  Your base file will be xyz_corp.html.  The required images are available in the img folder.  Bootstrap and jQuery files are available in the css and js folders.  Place any custom css that you create in the css/styles.css file that is provided.  Keep the existing file path structure.
+
+The menu does not have to be coded to function, merely display the horizontal links at high resolution and the image of the hamburger menu at low resolutions.
+
+The form does not have to be functional to submit any data, however the field elements should be coded correctly and with proper accessibilty in mind.
+
+On clicking the SUBMIT button, the page should launch a modal window thanking the user for submitting the form.
+
+Upon completion, re-zip your completed files and return to your contact at ComPsych.
