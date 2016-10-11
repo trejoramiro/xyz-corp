@@ -8,13 +8,30 @@
 	<body>
 		<div class="container">
 			<!-- nav bar here !-->
+			<header>
+				<div class="row">
+					<img src="./img/logo.png" alt="XYC Corp">
+					<p>Creating Things...and Stuff</p>
+				</div>
+				<nav>
+			<ul class="nav">
+				<li role="presentation"><a href="#">WHO WE ARE</a></li>
+				<li role="presentation"><a href="#">WHAT WE DO</a></li>
+				<li role="presentation"><a href="#">WHAT KIND OF THINGS</a></li>
+				<li role="presentation"><a href="#">WHAT SORT OF STUFF</a></li>
+				<li role="presentation"><a href="#">CONTACT</a></li>
+				
+			</ul>
+				</nav>
+			</header>
 			<div class="row">
-				<div class="col-xs-6 col-md-8">
+				<div class="col-xs-12 col-md-8">
 					<h1>Contact Us</h1>
-					<p>XYZ Corp creates all kinds of things. We also create different sorts of stuff. Wouldn't you like to know more?! Please complet the form to the right and we'll be in touch.</p>
+					<img src="./img/contact_image.jpg" alt="Contact Us">
+					<p>XYZ Corp creates all kinds of things. We also create different sorts of stuff.					     Wouldn't you like to know more?!</p> <p> Please complete the form to the right and we'll be in touch.</p>
 
 				</div>
-				<div class="col-xs-6 col-md-4">
+				<div class="col-xs-12 col-md-4">
 				<form>
 					<label>First Name</label>
 					<input type="text" name="first-name">
@@ -24,11 +41,27 @@
 					<input type="email" name="email">
 					<label>Company</label>
 					<input type="text" name="company">
-					<input type="submit" value="Login">
+					<div class="radio">
+						<label><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">Things</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Stuff</label>
+					</div>
+					<input type="submit" value="Submit" class="btn btn-success" >
 				</form>
 				</div>
 			</div>
 			<!-- footer bar here !-->
+			<footer>
+				<ul>
+					<a href="#">Who We Are</a> |
+					<a href="#">What We Do</a> |
+					<a href="#">What Kind of Things</a> |
+					<a href="#">What Sort of Stuff</a> | 
+					<a href="#">Contact</a>
+				</ul>
+				<p>Copyright &copy 2016 XYX Corp. All rights reserved.</p>
+			</footer>
 		</div>
 	</body>
 	<script src="./js/jquery.js"></script>
