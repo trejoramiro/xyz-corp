@@ -1,13 +1,24 @@
+
 .form-box {
 	border-style: solid;
-	border-width: 1px;
+	border-width: 0.5px;
+	border-color: #ccc;
+	padding: 20px;
 }
+
+.form-group {
+	margin-bottom: 25px;
+}
+
 
 /*************************/
-/******** PHONE **********/ 
+/******** PHONE **********/
 @media (max-width: 480px) {
+	
+	.nav-logo {
+		width: 150%;
+	}
 
-	.html { 
-	overflow-x: hidden; /* hide horizontal scroll bar */
 }
+
 }
