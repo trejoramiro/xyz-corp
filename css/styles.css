@@ -4,12 +4,21 @@
 	border-width: 0.5px;
 	border-color: #ccc;
 	padding: 20px;
+	margin-bottom: 50px;
 }
 
 .form-group {
-	margin-bottom: 25px;
+	padding-bottom: 10px;
 }
 
+.footer-links {
+	padding-top: 40px;
+}
+.footer-copyright {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: large;
+}
 
 /*************************/
 /******** PHONE **********/
@@ -17,6 +26,10 @@
 	
 	.nav-logo {
 		width: 150%;
+	}
+
+	.form-box {
+		margin-bottom: 60px;
 	}
 
 }
