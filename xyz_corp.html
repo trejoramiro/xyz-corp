@@ -7,44 +7,60 @@
 		<link href="./css/bootstrap.css" rel="stylesheet">
 		<link href="./css/jquery.css" rel="stylesheet">
 		<link href="./css/styles.css" rel="stylesheet">
+
 	</head>
 	<body>
+			<header>
+				<nav class="navbar header-nav">
+						<div class="container header-container">
+							<div class="row nav-row">
+								<div class="col-xs-8 col-md-6">
+								<a href="#"><img src="./img/logo.png" alt="XYC Corp" class="nav-logo"></a>
+								</div>
+								<div class="col-md-6 hidden-xs">
+									<h2 class="text-right header-right-text">Creating Things...and Stuff</h2>
+								</div>
+								<div class="col-xs-4 hidden-sm hidden-md hidden-lg container-button-toggle" >
+									<button type="button" class="navbar-toggle collapsed header-button-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+										<span><img src="./img/hamburger_menu.png"></span>
+									</button>
+								</div>
+							</div>
 
-		<div class="container" >
-			<!-- nav bar here !-->
-			<nav class="navbar">
-
-				<header>
-					<div class="row nav-row" style="background-color:#003E74; border-bottom: 1px solid #000000;">
-						<div class="col-xs-8 col-md-6">
-							<img src="./img/logo.png" alt="XYC Corp" class="nav-logo">
 						</div>
-						<div class="col-md-6 hidden-xs header-right-text">
-							<h2 class="text-right" >Creating Things...and Stuff</h2>
-						</div>
-						<div class="col-xs-4 hidden-sm hidden-md hidden-lg container-button-toggle">
-							<button type="button" class="navbar-toggle collapsed header-button-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span><img src="./img/hamburger_menu.png"></span></button>
+						<div class="hidden-md hidden-lg">
+						<div class="collapse navbar-collapse" id="navbar" style="background-color:#E9EAED;">
+							<ul class="nav navbar-nav nav-links">
+								<li><a href="#"><strong>WHO WE ARE</strong></a></li>
+								<li><a href="#"><strong>WHAT WE DO</strong></a></li>
+								<li><a href="#"><strong>WHAT KIND OF THINGS</strong></a></li>
+								<li><a href="#"><strong>WHAT SORT OF STUFF</strong></a></li>
+								<li><a href="#"><strong>CONTACT</strong></a></li>
+							</ul>
 						</div>
 					</div>
-				</header>
-
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color:#E9EAED;">
-						<ul class="nav navbar-nav nav-links">
-							<li><a href="#"><strong>WHO WE ARE</strong></a></li>
-							<li><a href="#"><strong>WHAT WE DO</strong></a></li>
-							<li><a href="#"><strong>WHAT KIND OF THINGS</strong></a></li>
-							<li><a href="#"><strong>WHAT SORT OF STUFF</strong></a></li>
-							<li><a href="#"><strong>CONTACT</strong></a></li>
-						</ul>
-					</div>
-
 				</nav>
 
-			<main>
+					<nav class="navbar hidden-xs hidden-sm header-nav-secondary">
+						<div class="container" style="background-color: #E9EAED;">
+							<div id="navbar" class="navbar-collapse collapse header-navbar">
+								<ul class="nav navbar-nav nav-links">
+									<li><a href="#"><strong>WHO WE ARE</strong></a></li>
+									<li><a href="#"><strong>WHAT WE DO</strong></a></li>
+									<li><a href="#"><strong>WHAT KIND OF THINGS</strong></a></li>
+									<li><a href="#"><strong>WHAT SORT OF STUFF</strong></a></li>
+									<li><a href="#"><strong>CONTACT</strong></a></li>
+								</ul>
+							</div>
+					</nav>
+				</header>
+
+	<main>
+		<div class="container" >
 			<div class="row main-row">
 				<div class="col-xs-12 col-md-8 main-header-text-container">
 					<h3 class="main-header-text">Contact Us</h3>
-					<div class="hidden-xs">
+					<div class="hidden-xs main-paragraph">
 						<img src="./img/contact_image.jpg" class="img-responsive main-image" alt="Contact Us">
 						<p>XYZ Corp creates all kinds of things. We also create different sorts of stuff. Wouldn't you like to know more?!</p> <p> Please complete the form to the right and we'll be in touch.</p>
 					</div>
@@ -54,11 +70,11 @@
 						<form>
 					<div class="form-group">
 						<label>First Name</label>
-						<input type="text" name="first-name" class="form-control">
+						<input type="text" name="firstname" class="form-control">
 					</div>
 					<div class="form-group">
 						<label>Last Name</label>
-						<input type="text" name="last-name" class="form-control">
+						<input type="text" name="lastname" class="form-control">
 					</div>
 					<div class="form-group">
 						<label>Email Address</label>
@@ -71,22 +87,24 @@
 					<div class="form-group">
 					<label>I am interested in:</label>
 						<div class="radio form-radio">
-							<label><input type="radio" name="optionsRadios" id="optionsRadios1" value="Things">Things</label>
+							<label><input type="radio" name="interestIn" id="optionsRadios1" value="Things">Things</label>
 						</div>
 						<div class="radio form-radio">
-							<label><input type="radio" name="optionsRadios" id="optionsRadios2" value="Stuff">Stuff</label>
+							<label><input type="radio" name="interestIn" id="optionsRadios2" value="Stuff">Stuff</label>
 						</div>
 					</div>
-					<input type="submit" value="SUBMIT" class="btn btn-success form-control" >
+					<input type="submit" value="SUBMIT" class="btn btn-success form-control form-btn-submit" >
 				</form>
-					</div> <!--form-box !-->
+					</div>
 				</div>
 			</div>
-		</main>
-			<!-- footer bar here !-->
-			<footer style="background-color:#E9EAED;">
+		</div>
+	</main>
+
+	<footer>
+		<div class="container-fluid footer">
 				<div class="row footer-links">
-					<div class="col-xs-12 col-md-8 col-md-offset-3">
+					<div class="col-xs-12 col-md-8 col-md-offset-2 footer-col">
 						<a href="#">Who We Are</a> |
 						<a href="#">What We Do</a> |
 						<a href="#">What Kind of Things</a> |
@@ -95,13 +113,15 @@
 					</div>
 				</div>
 				<div class="row footer-copyright">
-					<div class="col-xs-12 col-md-6 col-md-offset-4 col-xs-offset-1">
+					<div class="col-xs-12 col-md-6 col-md-offset-3 footer-col">
 						<p>Copyright &copy 2016 XYZ Corp. All rights reserved.</p>
 					</div>
 				</div>
-			</footer>
 		</div>
-	</body>
+	</footer>
+
+</body>
+
 	<script src="./js/jquery.js"></script>
 	<script src="./js/bootstrap.js"></script>
 </html>
