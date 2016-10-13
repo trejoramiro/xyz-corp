@@ -1,7 +1,60 @@
+/*************************/
+/** Overwrite Bootstrap **/
+/*************************/
+.btn-success {
+	background-color: #628000;
+	border-color: #628000;
+}
+
+.form-control {
+	border-radius: 2px;
+}
+
+.header-button-toggle {
+	margin-top: 5px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: #003E74;
+  text-decoration: none;
+	border-bottom: 1px solid #000000;
+}
+
+@media (min-width: 768px) {
+
+	.navbar-nav > li > a {
+	    padding-top: 10px;
+	  	padding-bottom: 10px;
+	}
+
+}
+
+/*************************/
+
+.nav-links a {
+	color: #003E74;
+}
+
+.nav-links a:hover {
+	color: #ffffff;
+}
 
 .header-right-text {
 	color: #ffffff;
-	padding-right: 0px;
+}
+
+.main-image {
+	padding-bottom: 15px;
+}
+
+.main-row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.main-header-text {
+	margin-top: 0px;
+	margin-bottom: 15px;
 }
 
 .form-box {
@@ -16,27 +69,96 @@
 	padding-bottom: 10px;
 }
 
+.form-radio {
+	margin-left: 15px;
+}
+
 .footer-links {
 	padding-top: 40px;
 }
+
+.footer-links a {
+	color: #696969;
+}
+
+.footer-copyright p {
+	color: #545454;
+}
+
 .footer-copyright {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	font-size: large;
 }
 
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+
 /*************************/
 /******** PHONE **********/
+/*************************/
 @media (max-width: 480px) {
-	
+
+	.container {
+		padding-left: 0px;
+		padding-right: 0px;
+		overflow: hidden; /* makes the horizontal scroll bar disappear */
+	}
 	.nav-logo {
-		width: 150%;
+		width: 130%;
+		padding-left: 5px;
+	}
+
+	.nav-links {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	.main-header-text-container {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.form-container {
+		padding-right: 5px;
+		padding-left: 5px;
+		padding-top: 25px;
 	}
 
 	.form-box {
 		margin-bottom: 60px;
 	}
 
-}
+	.form-radio {
+		margin-left: 20px;
+	}
+
+	.footer-links {
+			text-align: center;
+	}
+
+	.footer-copyright {
+		font-size: medium;
+	}
+
+	.header-button-toggle {
+		margin-right: 0px;
+		padding: 0px;
+	}
+
+	.container-button-toggle {
+		padding-right: 10px;
+	}
+
+	.btn-success {
+		padding-top: 10px;
+		padding-bottom: 30px;
+	}
 
 }
+
+/*************************/
+/******** TABLET **********/
+/*************************/
