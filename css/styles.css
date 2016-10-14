@@ -43,6 +43,10 @@ label {
 	color: #745555;
 }
 
+input[type="radio"] {
+	margin: 1.5px 0 0;
+}
+
 
 @media (min-width: 768px) {
 
@@ -114,7 +118,7 @@ label {
 }
 
 .main-paragraph {
-	font-size: 1.2em;
+	font-size: 1.15em;
 }
 
 .main-paragraph > p {
@@ -252,7 +256,3 @@ label {
 	}
 
 }
-
-/*************************/
-/******** TABLET **********/
-/*************************/
