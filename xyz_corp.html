@@ -1,0 +1,158 @@
+<!-- Author: Ramiro Trejo !-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf=8">
+		<title>XYZ Corp</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./css/bootstrap.css" rel="stylesheet">
+		<link href="./css/jquery.css" rel="stylesheet">
+		<link href="./css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+			<header>
+				<nav class="navbar header-nav">
+						<div class="container header-container">
+							<div class="row nav-row">
+								<div class="col-xs-8 col-md-6">
+									<a href="#"><img src="./img/logo.png" alt="XYC Corp" class="nav-logo"></a>
+								</div>
+								<div class="col-md-6 hidden-xs">
+									<h2 class="text-right header-right-text">Creating Things...and Stuff</h2>
+								</div>
+								<div class="col-xs-4 hidden-sm hidden-md hidden-lg container-button-toggle" >
+									<button type="button" class="navbar-toggle collapsed header-button-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+										<span><img src="./img/hamburger_menu.png"></span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="hidden-md hidden-lg">
+						<div class="collapse navbar-collapse" id="navbar" style="background-color:#E9EAED;">
+							<ul class="nav navbar-nav nav-links">
+								<li><a href="#"><strong>WHO WE ARE</strong></a></li>
+								<li><a href="#"><strong>WHAT WE DO</strong></a></li>
+								<li><a href="#"><strong>WHAT KIND OF THINGS</strong></a></li>
+								<li><a href="#"><strong>WHAT SORT OF STUFF</strong></a></li>
+								<li><a href="#"><strong>CONTACT</strong></a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+					<nav class="navbar hidden-xs hidden-sm header-nav-secondary">
+						<div class="container" style="background-color: #E9EAED;">
+							<div id="navbar" class="navbar-collapse collapse header-navbar">
+								<ul class="nav navbar-nav nav-links">
+									<li><a href="#"><strong>WHO WE ARE</strong></a></li>
+									<li><a href="#"><strong>WHAT WE DO</strong></a></li>
+									<li><a href="#"><strong>WHAT KIND OF THINGS</strong></a></li>
+									<li><a href="#"><strong>WHAT SORT OF STUFF</strong></a></li>
+									<li><a href="#"><strong>CONTACT</strong></a></li>
+								</ul>
+							</div>
+					</nav>
+				</header>
+	<main>
+		<div class="container" >
+			<div class="row main-row">
+				<div class="col-xs-12 col-md-8 main-header-text-container">
+					<h3 class="main-header-text">Contact Us</h3>
+					<div class="hidden-xs main-paragraph">
+						<img src="./img/contact_image.jpg" class="img-responsive main-image" alt="Contact Us">
+						<p style="text-align: justify;">XYZ Corp creates all kinds of things. We also create different sorts of stuff. Wouldn't you like to know more?!</p> <p> Please complete the form to the right and we'll be in touch.</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-4 form-container">
+					<div class="form-box">
+						<form onsubmit="myFunction()">
+							<div class="form-group">
+								<label>First Name</label>
+								<input type="text" name="firstname" class="form-control" id="firstname">
+							</div>
+							<div class="form-group">
+								<label>Last Name</label>
+								<input type="text" name="lastname" class="form-control" id="lastname">
+							</div>
+							<div class="form-group">
+								<label>Email Address</label>
+								<input type="email" name="email" class="form-control" id="email">
+							</div>
+							<div class="form-group">
+								<label>Company</label>
+								<input type="text" name="company" class="form-control" id="company">
+							</div>
+							<div class="form-group">
+								<label>I am interested in:</label>
+								<div class="radio form-radio">
+									<label><input type="radio" name="interestIn" id="optionsRadios1" value="Things">Things</label>
+								</div>
+								<div class="radio form-radio">
+									<label><input type="radio" name="interestIn" id="optionsRadios2" value="Stuff">Stuff</label>
+								</div>
+							</div>
+							<input id="submit" type="button" value="SUBMIT" class="btn btn-success form-control form-btn-submit" >
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container-fluid footer">
+				<div class="row footer-links">
+					<div class="col-xs-12 col-md-8 col-md-offset-2 footer-col">
+						<a href="#">Who We Are</a> |
+						<a href="#">What We Do</a> |
+						<a href="#">What Kind of Things</a> |
+						<a href="#">What Sort of Stuff</a> |
+						<a href="#">Contact</a>
+					</div>
+				</div>
+				<div class="row footer-copyright">
+					<div class="col-xs-12 col-md-6 col-md-offset-3 footer-col">
+						<p>Copyright &copy 2016 XYZ Corp. All rights reserved.</p>
+					</div>
+				</div>
+		</div>
+	</footer>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title text-center" id="myModalLabel">Thank You!</h4>
+	      </div>
+	      <div class="modal-body text-center">
+					<div class="col-md-12">
+	        	Your information has been successfully sent and we appreciate you contacting us. We'll be in touch.
+					</div>
+	      </div>
+	      <div class="modal-footer" style="border: none;">
+	        <button type="submit" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</body>
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.js"></script>
+	<script>
+ $("#submit").click(function () {
+		$.ajax({
+			method: "POST",
+			url: 'http://httpbin.org/post',
+			data: { key: "Data Goes Here" }
+		})
+		.always(function() {
+			// Clear input values //
+			$('input#firstname').val("");
+			$('input#lastname').val("");
+			$('input#email').val("");
+			$('input#company').val("");
+			$('input#optionsRadios1').attr("checked", false);
+			$('input#optionsRadios2').attr("checked", false);
+			$('#myModal').modal();
+		})
+	});
+	</script>
+</html>
